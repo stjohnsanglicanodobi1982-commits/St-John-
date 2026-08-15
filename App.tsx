@@ -7,7 +7,34 @@ import { Give } from './components/Give';
 import { Contact } from './components/Contact';
 import { Chatbot } from './components/Chatbot';
 import { Footer } from './components/Footer';
+function Gallery() {
+  return (
+    <section id="gallery" className="py-16 bg-slate-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-10">Youths Anniversary 2025</h2>
+        
+        <div className="flex flex-wrap gap-6 justify-center">
 
+          <div className="text-center">
+            <img src="/Images/group with matron.jpg" alt="Group with Matron" className="w-80 rounded-lg shadow-md" />
+            <p className="mt-2 font-semibold">Group Photo with Matron</p>
+          </div>
+
+          <div className="text-center">
+            <img src="/Images/group with vicar.jpg" alt="Group with Vicar" className="w-80 rounded-lg shadow-md" />
+            <p className="mt-2 font-semibold">Group Photo with Vicar</p>
+          </div>
+
+          <div className="text-center">
+            <img src="/Images/vicar_wife.jpg" alt="Vicar's Wife" className="w-80 rounded-lg shadow-md" />
+            <p className="mt-2 font-semibold">Mama Vicar</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
 export function App() {
   const [activeSection, setActiveSection] = useState('home');
 
@@ -51,6 +78,7 @@ export function App() {
         <Hero onJoinClick={handleJoinClick} />
         <About />
         <Services />
+        <Gallery />
         <Give />
         <Contact />
       </main>
