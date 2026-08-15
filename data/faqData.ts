@@ -1,20 +1,35 @@
-const faqData = [
+export const faqData = [
   {
-    question: "What time is Sunday service?",
-    answer: "Sunday service starts at 8:00 AM and 10:30 AM."
+    question: "Who is the Bishop?",
+    answer: "Our Bishop is Rt Revd Cornelius Oluwadare Adagbada. Bishop's wife: Mrs. Esther Olusola Adagbada."
   },
   {
-    question: "Where is St. John's Anglican Church located?",
-    answer: "We are located at Odobi, [Add your full address here]"
+    question: "Who is the Vicar?",
+    answer: "Our Vicar is Revd Jeremiah Ayodeji Folarin. Vicar's wife: Mrs. Victoria Toluwaloju Folarin."
   },
   {
-    question: "How can I give or tithe?",
-    answer: "You can give online through the Give section or contact the church office."
+    question: "What time is worship?",
+    answer: "Worship service holds every Sunday from 9:00 AM to 12:00 Noon."
   },
   {
-    question: "Do you have youth programs?",
-    answer: "Yes, we have youth fellowship every Friday by 5:00 PM."
+    question: "How many church members are there?",
+    answer: "Our church numerical strength is 120 members."
+  },
+  {
+    question: "How many choirs do we have?",
+    answer: "We have 35 choirs in St. John's Anglican Church Odobi."
+  },
+  {
+    question: "Which Diocese are we under?",
+    answer: "We are under Ekiti West Diocese, Okemesi Archdeaconry, Church of Nigeria Anglican Communion."
+  },
+  {
+    question: "When was the church founded?",
+    answer: "St. John's Anglican Church Odobi was founded in 1982."
   }
 ];
+
+// Creates the quick question buttons in chatbot
+export const PRESET_QUESTIONS = faqData.map(item => item.question);
 
 export default faqData;
